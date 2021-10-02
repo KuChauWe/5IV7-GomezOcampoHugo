@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Cesar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viggenere.css">
 </head>
 <body>
     <div class="Fondo">
         <div class="contenedorPrincipal">
-            Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.
+            <div id="h3">
+            <h3>Este es un ejemplo para poder cifrar un texto con el algoritmo de césar.</h3>
+            </div>
             <br>
-
+            <div id="areaTexto">
             <input type="number" id="desp" min="1" max="27">
-
+            </div>
             <br>
+            <div id="yave">
             <textarea id="cadena" cols="30" rows="10"></textarea>
+            </div>
             <br>
+            <div id="final">
             <p><input type="button" value="Cifrar" onclick="cifrar()" >
                 <input type="button" value="Descifrar" onclick="descifrar()" ></p>
+            </div>    
             <div id="resultado" >
 
             </div>
