@@ -45,7 +45,6 @@ $(document).ready(function(){
 
                 
                 let newVal = change(posm, posk);
-                let owo = 0
 
                 newMess += abc[newVal];  //mensaje cifrado
             }
@@ -63,12 +62,12 @@ $(document).ready(function(){
         // y = (x+z)mod27 pq estamos usando la ñ
 
         //vamos a traer los datos de los campos de texto
-        key = document.getElementById('llave1').value;
+        key = document.getElementById('llave').value;
         //vamos a verificar los datos
         key = key.replace(/ /g, '');
 
         //obtener el mensaje
-        let mess = document.getElementById('cadena1').value;
+        let mess = document.getElementById('cadena').value;
 
         mess = mess.replace(/ /g, '');
 
@@ -97,7 +96,7 @@ $(document).ready(function(){
                 newMess += abc[newVal];  //mensaje decifrado
             }
             //imprimir el resultado
-            document.getElementById('resultado1').innerHTML = newMess;
+            document.getElementById('resultado').innerHTML = newMess;
         }else{
             //aqui es si no se cumple las condiciones
         }
@@ -167,4 +166,15 @@ function sz(){
     //alert para decir que el texto no ha sido aceptado
 
     alert("La clave no puede ser mayor que el mensaje");
+}
+
+function cambiarci(){
+    if (document.getElementById("ci1").checked){
+        window.location = 'Ejemplo_Cesar_1.html';
+        window.location.assign('Ejemplo_Cesar_1.html');
+    }
+    else if (document.getElementById("ci2").checked){
+        window.location = 'Ejemplo_Vigenere_2.html';
+        window.location.assign('Ejemplo_Vigenere_2.html');
+    }
 }

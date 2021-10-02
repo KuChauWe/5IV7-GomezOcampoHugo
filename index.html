@@ -15,14 +15,21 @@
                 <p>¡Hola!</p>
                 <p>Selecciona el método con el que quieres cifrar.</p>
             </div>
+            <form action="/indexVerdadero.html">
             <div class="botonesCifrados">
-                <p id="boton">Cifrado de Cesar</p>
+                <p id="boton"><input name="btn" type="radio" id="boton 1">Cifrado de Cesar</input></p>
             </div>
             <div class="botonesCifrados">
-                <p id="boton">Cifrado de Viggenere</p>
+                <p id="boton"><input name="btn" type="radio" id="boton 2">Cifrado de Viggenere</input></p>
             </div>
+            <div class="btnEnviar">
+                <input onclick="reedireccionar()" type="button" value="¡Vamos!" id="btnEnviar">
+            </div>
+            </form>
         </div>
     </div>
     </div>
+       
+    <script src="JS/index.js" ></script>
 </body>
 </html>

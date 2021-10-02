@@ -35,3 +35,16 @@ body{
 #boton{
     padding: 8px;
 }
+#btnEnviar{
+    background: rgb(21,136,62);
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-items: right;
+}
+.btnEnviar{
+    display: flex;
+    justify-content: flex-end;
+    margin-inline: 3rem;
+}
