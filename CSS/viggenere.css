@@ -37,3 +37,7 @@ h3{
 .contenedorPrincipal{
     margin-top: 4rem;
 }
+#resultado{
+    display: flex;
+    justify-content: center;
+}
